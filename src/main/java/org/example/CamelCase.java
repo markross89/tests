@@ -11,8 +11,6 @@ public class CamelCase {
 
     public static String camelCase(String input) {
 
-
-
         char[] chars = input.toCharArray();
         StringBuilder sb = new StringBuilder();
         for (char aChar : chars) {
