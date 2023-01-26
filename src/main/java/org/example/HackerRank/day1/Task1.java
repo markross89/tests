@@ -1,4 +1,4 @@
-package org.example.HackerRank;
+package org.example.HackerRank.day1;
 
 import java.util.List;
 

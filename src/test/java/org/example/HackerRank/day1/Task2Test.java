@@ -1,5 +1,6 @@
-package org.example.HackerRank;
+package org.example.HackerRank.day1;
 
+import org.example.HackerRank.day1.Task2;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

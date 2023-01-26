@@ -1,4 +1,4 @@
-package org.example;
+package org.example.CodeWars;
 
 
 import java.util.ArrayList;

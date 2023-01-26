@@ -1,6 +1,5 @@
-package org.example.HackerRank;
+package org.example.HackerRank.day1;
 
-import java.util.Arrays;
 import java.util.List;
 
 
