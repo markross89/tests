@@ -1,7 +1,6 @@
 package org.example;
 
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -9,12 +8,12 @@ import java.util.stream.Collectors;
 public class Tribonacci {
 
     public static void main(String[] args) {
-
+var tribonacci = new Tribonacci();
         double[] number = {0,0,1};
-        System.out.println(Arrays.toString(tribonacci(number, 10)));
+        System.out.println(Arrays.toString(tribonacci.tribonacci(number, 10)));
     }
 
-    public static double[] tribonacci(double[] s, int n) {
+    public  double[] tribonacci(double[] s, int n) {
 
         List<Double> list = Arrays.stream(s)
                 .boxed()
