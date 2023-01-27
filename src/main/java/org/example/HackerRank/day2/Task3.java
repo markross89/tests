@@ -76,14 +76,8 @@ import java.util.stream.Collectors;
 
 public class Task3 {
 
-    public static void main(String[] args) {
-
-        System.out.println(countingSort(Arrays.asList(1,1,1,2,3)));
-
-    }
-
-    public static List<Integer> countingSort(List<Integer> arr) {
-        int[] result = new int[100];
+    public List<Integer> countingSort(List<Integer> arr) {
+        int[] result = new int[10];
         for (Integer integer : arr) {
             result[integer]++;
         }

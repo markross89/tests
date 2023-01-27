@@ -42,12 +42,7 @@ import java.util.stream.Collectors;
 
 public class Task1 {
 
-    public static void main(String[] args) {
-        System.out.println(lonelyInteger(Arrays.asList(1, 2, 3, 4, 1, 3, 2)));
-    }
-
-
-    public static int lonelyInteger(List<Integer> a) {
+    public int lonelyInteger(List<Integer> a) {
         a = a.stream().sorted().collect(Collectors.toList());
         for (int i = 0; i < a.size() - 1; i += 2) {
             if (!Objects.equals(a.get(i), a.get(i + 1))) {

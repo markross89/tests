@@ -83,13 +83,7 @@ import java.util.List;
 
 public class Task2 {
 
-    public static void main(String[] args) {
-
-     int result =  diagonalDifference(Arrays.asList(Arrays.asList(1,2,3),Arrays.asList(4,5,6), Arrays.asList(9,8,9)));
-        System.out.println(result);
-    }
-
-    public static int diagonalDifference(List<List<Integer>> arr) {
+    public int diagonalDifference(List<List<Integer>> arr) {
         int left = 0;
         int right = 0;
 
