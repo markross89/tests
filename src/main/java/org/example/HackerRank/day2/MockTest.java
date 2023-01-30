@@ -3,79 +3,48 @@ package org.example.HackerRank.day2;
 import java.util.Arrays;
 import java.util.List;
 
-//Skip to main content
-//ALL
-//
-//    1
-//
+
 //1. Flipping the Matrix
 //
-//Sean invented a game involving a
-//matrix where each cell of the matrix contains an integer. He can reverse any of its rows or columns any number of times. The goal of the game is to maximize the sum of the elements in the
+//    Sean invented a game involving a matrix where each cell of the matrix contains an integer.
+//    He can reverse any of its rows or columns any number of times. The goal of the game is to maximize the sum of the elements in the
+//    sub-matrix located in the upper-left quadrant of the matrix. Given the initial configurations for matrices,
+//    help Sean reverse the rows and columns of each matrix in the best possible way so that the sum of the elements in the matrix's upper-left quadrant is maximal.
 //
-//submatrix located in the upper-left quadrant of the matrix.
+//    Example
 //
-//Given the initial configurations for
+//    1 2
+//    3 4
 //
-//matrices, help Sean reverse the rows and columns of each matrix in the best possible way so that the sum of the elements in the matrix's upper-left quadrant is maximal.
+//    we want to maximize the top left quadrant, of a matrix. Reverse row 2
 //
-//Example
+//    1 2
+//    4 3
 //
-//1 2
-//3 4
+//    And now reverse column 1
 //
-//It is
-//and we want to maximize the top left quadrant, a matrix. Reverse row
+//    4 2
+//    1 3
 //
-//:
+//    The maximal sum is 4
+
+//    Function Description
 //
-//1 2
-//4 3
+//    Complete the flippingMatrix function in the editor below.
 //
-//And now reverse column
+//     flippingMatrix has the following parameters:
+//-    int matrix[2n][2n]: a 2-dimensional array of integers
 //
-//:
+//     Returns
+//-    nt: the maximum sum possible.
 //
-//4 2
-//1 3
+//     Input Format
 //
-//The maximal sum is
+//     The first line contains an integer the number of queries.
 //
-//.
-//
-//Function Description
-//
-//Complete the flippingMatrix function in the editor below.
-//
-//flippingMatrix has the following parameters:
-//- int matrix[2n][2n]: a 2-dimensional array of integers
-//
-//Returns
-//- int: the maximum sum possible.
-//
-//Input Format
-//
-//The first line contains an integer
-//
-//, the number of queries.
-//
-//The next
-//
-//sets of lines are in the following format:
-//
-//    The first line of each query contains an integer,
-//
-//.
-//Each of the next
-//lines contains space-separated integers in row
-//
-//    of the matrix.
-//
-//Constraints
-//
-//, where
-//
-//    .
+//     The next sets of lines are in the following format:
+//     The first line of each query contains an integer,
+//     Each of the next lines contains space-separated integers in row of the matrix.
 //
 //Sample Input
 //
@@ -99,15 +68,13 @@ import java.util.List;
 //matrix:
 //
 //
-//Perform the following operations to maximize the sum of the
+//    Perform the following operations to maximize the sum of the
 //
-//submatrix in the upper-left quadrant:
+//    sub-matrix in the upper-left quadrant:
 //
-//    Reverse column
-//
-//(), resulting in the matrix:
-//Reverse row (), resulting in the matrix:
-//The sum of values in the submatrix in the upper-left quadrant is .
+//    Reverse column (), resulting in the matrix:
+//    Reverse row (), resulting in the matrix:
+//    The sum of values in the sub-matrix in the upper-left quadrant is 414.
 
 public class MockTest {
     public static void main(String[] args) {
