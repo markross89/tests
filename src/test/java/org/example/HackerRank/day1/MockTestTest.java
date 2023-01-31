@@ -57,9 +57,15 @@ class MockTestTest {
     }
 
     @Test
-    void findMedianTest() {
-        assertEquals(3,mockTest.findMedian(Arrays.asList(1,2,3,4,5)));
+    void findMedianTest_first() {
         assertEquals(4,mockTest.findMedian(Arrays.asList(2,3,4,7,1,7,6)));
+    }
+    @Test
+    void findMedianTest_second() {
         assertEquals(0,mockTest.findMedian(Arrays.asList(0,0,0,0,0)));
+    }
+    @Test
+    void findMedianTest_third() {
+        assertEquals(3,mockTest.findMedian(Arrays.asList(1,2,3,4,5)));
     }
 }

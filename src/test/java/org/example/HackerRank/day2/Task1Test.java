@@ -14,9 +14,15 @@ class Task1Test {
 
 
     @Test
-    void lonelyInteger() throws Exception {
-        assertEquals(4, task1.lonelyInteger(Arrays.asList(1, 2, 3, 1, 2, 3, 4)));
+    void lonelyInteger_first() throws Exception {
         assertEquals(1, task1.lonelyInteger(Arrays.asList(1, 2, 2)));
+    }
+    @Test
+    void lonelyInteger_second() throws Exception {
         assertEquals(10, task1.lonelyInteger(Arrays.asList(1, 2, 3, 1, 2, 3, 4,4,10)));
+    }
+    @Test
+    void lonelyInteger_third() throws Exception {
+        assertEquals(4, task1.lonelyInteger(Arrays.asList(1, 2, 3, 1, 2, 3, 4)));
     }
 }
