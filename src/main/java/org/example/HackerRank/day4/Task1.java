@@ -75,7 +75,7 @@ Constraints
 public class Task1 {
 
     public static void main(String[] args) {
-        System.out.println(superDigit("9875", 4));
+        System.out.println(superDigit("235252", 6));
 
     }
 

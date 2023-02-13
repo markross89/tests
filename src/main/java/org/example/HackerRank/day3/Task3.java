@@ -2,11 +2,8 @@ package org.example.HackerRank.day3;
 
 public class Task3 {
 
-    public static void main(String[] args) {
-        System.out.println(caesarCipher("www.abc.xy", 87));
-    }
 
-    public static String caesarCipher(String s, int k) {
+    public String caesarCipher(String s, int k) {
 
         s = s.trim().replace(" ", "");
 

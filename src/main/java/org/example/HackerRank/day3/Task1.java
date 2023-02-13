@@ -38,7 +38,14 @@ public class Task1 {
 //
 //For each test cases, print the elements of the transformed zig zag sequence in a single line.
 
-    public static void findZigZagSequence(int [] a, int n){
+    public static void main(String[] args) {
+
+        int[] array = {2,3,5,1,4};
+        int n = array.length;
+
+        findZigZagSequence(array, n);
+    }
+    public static void findZigZagSequence(int[] a, int n){
         Arrays.sort(a);
         int mid = n/2;  //changed from int mid = (n+1)/2;
         int temp = a[mid];
@@ -58,6 +65,6 @@ public class Task1 {
             if(i > 0) System.out.print(" ");
             System.out.print(a[i]);
         }
-        System.out.println();
+
     }
 }

@@ -2,13 +2,9 @@ package org.example.HackerRank.day3;
 
 public class MockTest {
 
-    public static void main(String[] args) {
 
-        System.out.println(palindromeIndex("azce uCza"));
 
-    }
-
-    public static int palindromeIndex(String s) {
+    public int palindromeIndex(String s) {
 
         char[] word = s.toLowerCase().trim().replace(" ","").toCharArray();
         int l = word.length - 1;
